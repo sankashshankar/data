@@ -25,3 +25,6 @@ for idx in range(len(csv_files)):
 
 
 date_time = [datetime(int(item[3:7]), int(item[7:9]), int(item[9:11]), int(item[12:14]), int(item[14:16]), int(item[16:18])) for item in csv_files]
+normalized_datetime_intervals = [(date_time[i] - date_time[0]).total_seconds()/86400. for i in range(len(date_time))]
+
+git remote set-url origin https://srs37@github.com/srs37/data.git
