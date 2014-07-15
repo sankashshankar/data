@@ -1,0 +1,14 @@
+list.files()
+setwd("Desktop/data/world-cup-predictions/")
+list.files()
+pred1 <- read.csv("wc-20140612-220228.csv")
+pred1
+plot(pred1)
+pred1[pred1$win = max(pred1$win)]
+pred1[pred1$win = max(pred1$win),]
+pred1[pred1$win == max(pred1$win),]
+pred1[pred1$win == min(pred1$win),]
+pred1[pred1$country == 'Germany',]
+list.files()
+list.files()[0]
+type(list.files())
